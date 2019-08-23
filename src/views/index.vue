@@ -9,6 +9,7 @@
             :fields="fields"
             primary-key="id"
             hover
+            responsive
             @row-clicked="onRowClick"
         >
           <template slot="[image]" slot-scope="data">

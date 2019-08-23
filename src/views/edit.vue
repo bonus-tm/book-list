@@ -45,6 +45,11 @@ export default {
       this.removeBook(this.book.id)
       this.$router.push({name: 'home'})
     }
+  },
+  created () {
+    if (typeof this.$route.params.id === 'undefined') {
+      this.$router.push({name: 'home'})
+    }
   }
 }
 </script>

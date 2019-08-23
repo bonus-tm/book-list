@@ -19,7 +19,7 @@ let router = new Router({
       component: () => import(/* webpackChunkName: "create" */ './views/create.vue')
     },
     {
-      path: '/edit/:id',
+      path: '/edit/:id?',
       name: 'edit',
       component: () => import(/* webpackChunkName: "edit" */ './views/edit.vue')
     }
