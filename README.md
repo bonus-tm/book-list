@@ -30,4 +30,25 @@
 - Клиентская валидация
 - Клиентский роутинг
  
-Просьба, пожалуйста, приложить описание запуска приложения.
+## Запуск приложения
+
+Локально в режиме dev-сервера:
+```bash
+git clone https://github.com/bonus-tm/book-list
+npm install
+npm run serve
+```
+
+В docker-контейнере:
+```bash
+git clone https://github.com/bonus-tm/book-list
+docker build -t book-list .
+docker run -d --name book-list -p 8080:80 book-list
+```
+
+Остановить и удалить контейнер и его образ:
+```bash
+docker stop book-list
+docker rm book-list
+docker rmi book-list
+```
